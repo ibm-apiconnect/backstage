@@ -1,5 +1,5 @@
 {
-  "name": "@internal/apic-backstage",
+  "name": "apic-backstage",
   "description": "The APIC backend module for the catalog plugin.",
   "version": "1.0.0",
   "main": "src/index.ts",
