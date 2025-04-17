@@ -34,7 +34,7 @@
     "@backstage/types": "^1.2.1",
     "@types/node-fetch": "^2.6.12",
     "luxon": "^3.6.1",
-    "node-fetch": "^2.7.0",
+    "node-fetch": "^3.3.2",
     "winston": "^3.17.0"
   },
   "devDependencies": {
