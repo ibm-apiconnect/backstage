@@ -8,19 +8,19 @@
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ********************************************************** {COPYRIGHT-END} **/
 import * as https from 'https';
-import { IbmApicConfig } from '../providers/types';
+import type { IbmApicConfig } from '../providers/types.js';
 import fetch from 'node-fetch';
-import { CacheService, LoggerService } from '@backstage/backend-plugin-api';
-import { Api, Catalog, Org, Product, ProductEntity } from '../lib/types';
+import type { CacheService, LoggerService } from '@backstage/backend-plugin-api';
+import { Api, Catalog, Org, Product, type ProductEntity } from '../lib/types.js';
 
 import {
     ANNOTATION_SOURCE_LOCATION,
-    ApiEntity,
+    type ApiEntity,
     ANNOTATION_LOCATION,
     ANNOTATION_ORIGIN_LOCATION,
-    DomainEntity,
-    SystemEntity,
-    EntityLink
+    type DomainEntity,
+    type SystemEntity,
+    type EntityLink
 } from '@backstage/catalog-model';
 
 const httpsAgent = new https.Agent({

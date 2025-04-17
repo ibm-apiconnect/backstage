@@ -7,8 +7,8 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ********************************************************** {COPYRIGHT-END} **/
-import { Config } from '@backstage/config';
-import { IbmApicConfig } from './types';
+import type { Config } from '@backstage/config';
+import type { IbmApicConfig } from './types.js';
 
 export function readIbmApicEntityConfigs(config: Config): IbmApicConfig[] {
   const configs: IbmApicConfig[] = [];

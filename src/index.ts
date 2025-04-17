@@ -13,5 +13,5 @@
  * @packageDocumentation
  */
 
-export { ibmModuleApic as default } from './module';
-export { ApicProvider } from './providers/ApicProvider';
+export { ibmModuleApic as default } from './module.js';
+export { ApicProvider } from './providers/ApicProvider.js';

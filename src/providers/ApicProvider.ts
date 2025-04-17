@@ -7,21 +7,22 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ********************************************************** {COPYRIGHT-END} **/
-import { Config } from '@backstage/config';
-import {
+
+import type { Config } from '@backstage/config';
+import type {
   EntityProvider,
   EntityProviderConnection,
 } from '@backstage/plugin-catalog-node';
 
-import { readIbmApicEntityConfigs } from './config';
-import { CacheService, SchedulerServiceTaskRunner, LoggerService } from '@backstage/backend-plugin-api';
-import { ProductEntity } from '../lib/types';
+import { readIbmApicEntityConfigs } from './config.js';
+import type { CacheService, SchedulerServiceTaskRunner, LoggerService } from '@backstage/backend-plugin-api';
+import type { ProductEntity } from '../lib/types.js';
 
-import {
+import type {
   ApiEntity,
   SystemEntity
 } from '@backstage/catalog-model';
-import { collectAPIEntities, collectCatalogEntities, collectOrgEntities, collectProductEntities, createAPICDomain, createInstanceDomain } from '../lib/ApicDataCollector';
+import { collectAPIEntities, collectCatalogEntities, collectOrgEntities, collectProductEntities, createAPICDomain, createInstanceDomain } from '../lib/ApicDataCollector.js';
 
 export class ApicProvider implements EntityProvider {
   private cache: CacheService;

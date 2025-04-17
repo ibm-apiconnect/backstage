@@ -7,4 +7,4 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ********************************************************** {COPYRIGHT-END} **/
-export { ApicProvider } from './ApicProvider';
+export { ApicProvider } from './ApicProvider.js';

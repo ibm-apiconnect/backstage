@@ -13,8 +13,8 @@ import {
 } from '@backstage/backend-plugin-api';
 
 import { catalogProcessingExtensionPoint } from '@backstage/plugin-catalog-node/alpha';
-import { ApicProvider } from './providers';
-import { ProductProcessor } from './processors/ProductProcessor';
+import { ApicProvider } from './providers/ApicProvider.js';
+import { ProductProcessor } from './processors/ProductProcessor.js';
 
 export const ibmModuleApic = createBackendModule({
   pluginId: 'catalog',

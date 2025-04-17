@@ -9,22 +9,22 @@
  ********************************************************** {COPYRIGHT-END} **/
 
 import {
-    CatalogProcessor,
-    CatalogProcessorCache,
-    CatalogProcessorEmit,
-    EntityRelationSpec,
+    type CatalogProcessor,
+    type CatalogProcessorCache,
+    type CatalogProcessorEmit,
+    type EntityRelationSpec,
     processingResult,
 } from "@backstage/plugin-catalog-node";
-import { LocationSpec } from "@backstage/plugin-catalog-common";
+import type { LocationSpec } from "@backstage/plugin-catalog-common";
 import {
-    CompoundEntityRef,
-    Entity,
+    type CompoundEntityRef,
+    type Entity,
     getCompoundEntityRef,
     parseEntityRef, RELATION_API_PROVIDED_BY,
     RELATION_OWNED_BY,
     RELATION_OWNER_OF, RELATION_PROVIDES_API,
 } from "@backstage/catalog-model";
-import { ProductEntity } from "../lib/types";
+import type { ProductEntity } from "../lib/types.js";
 
 export class ProductProcessor implements CatalogProcessor {
     getProcessorName(): string {
