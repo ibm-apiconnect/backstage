@@ -1,6 +1,6 @@
 # API Connect Backstage Plugin
 
-## Installing and using the API Connect Backstage Plugin technical preview
+## Installing and using the API Connect Backstage Plugin
 
 Getting the API Connect plugin - clone this repository.
 
@@ -18,6 +18,9 @@ Getting the API Connect plugin - clone this repository.
   ```bash
   yarn --cwd packages/backend add @internal/apic-backstage@^1.0.0
   ```
+### Installing the plugin on Redhat Developer Hub
+
+1. Follow the usual dynamic plugin instructions to install `https://www.npmjs.com/package/apic-backstage` from npmjs.
 
 ### Configuration the API Connect Plugin
 
@@ -64,7 +67,7 @@ For example the credentials.json for apic-instance-1 in the example above could 
 
 **Note**: the credentials.json uses snake case, the app-config.yaml API Connect configuration uses camel case.
 
-The username and password or api key are for a provider organization member. For this tech preview it is assumed that there is a single user who is a member of each provider organization to be added to the backstage instance - they should have viewer role for each provider organization at least.  This user can also be a member of more than one provider organization.
+The username and password or api key are for a provider organization member. It is assumed that there is a single user who is a member of each provider organization to be added to the backstage instance - they should have viewer role for each provider organization at least.  This user can also be a member of more than one provider organization.
 
 ### Using a Local User Registry
 
@@ -97,7 +100,7 @@ yarn dev
 
 ## Support
 
-Support is available for customers with a valid IBM API Connect entitlement - simply raise an IBM support case as normal. Note that this will only provide support for the APIC plugin itself, not the backstage server instance.
+Support is available for customers with a valid IBM API Connect entitlement - simply raise an IBM support case as normal. Note that this will only provide support for the APIC plugin itself, not the backstage (or Redhat DevHub) server instance.
 
 ### References
 
