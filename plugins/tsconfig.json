@@ -1,40 +1,9 @@
 {
-  "compilerOptions": {
-    /* Base Options: */
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    //"verbatimModuleSyntax": true,
-
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-
-    /* If transpiling with TypeScript: */
-    "emitDeclarationOnly": true,
-    "declaration": true,
-    "declarationDir": "dist-types/src",
-    
-    "module": "commonjs",
-    "outDir": "dist",
-    "sourceMap": true,
-
-    /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"],
-
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["plugins/src/*"] // Map "~/*" to "src/*"
+    "extends": "@backstage/cli/config/tsconfig.json",
+    "include": ["src", "index.d.ts"],
+    "exclude": ["node_modules"],
+    "compilerOptions": {
+        "outDir": "dist-types",
+        "rootDir": "."
     }
-  },
-
-  "include": [
-    "plugins/src/**/*" // *** The files TypeScript should type check ***
-  ],
-  "exclude": ["node_modules", "build"] // *** The files to not type check ***
 }
