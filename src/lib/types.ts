@@ -7,7 +7,7 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ********************************************************** {COPYRIGHT-END} **/
-import { Entity } from "@backstage/catalog-model";
+import type { Entity } from "@backstage/catalog-model";
 
 export class Org {
   org_type!: string;
