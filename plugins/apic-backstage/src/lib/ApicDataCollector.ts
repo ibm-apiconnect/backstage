@@ -11,7 +11,7 @@ import * as https from 'https';
 import type { IbmApicConfig } from '../providers/types.js';
 import fetch from 'node-fetch';
 import type { CacheService, LoggerService } from '@backstage/backend-plugin-api';
-import { Api, Catalog, Org, Product, type ProductEntity } from '../lib/types.js';
+import { Api, Catalog, Org, Product, type ProductEntity } from './types.js';
 
 import {
     ANNOTATION_SOURCE_LOCATION,
