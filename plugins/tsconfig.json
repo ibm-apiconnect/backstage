@@ -29,12 +29,12 @@
 
     "baseUrl": "./",
     "paths": {
-      "~/*": ["src/*"] // Map "~/*" to "src/*"
+      "~/*": ["plugins/src/*"] // Map "~/*" to "src/*"
     }
   },
 
   "include": [
-    "src/**/*" // *** The files TypeScript should type check ***
+    "plugins/src/**/*" // *** The files TypeScript should type check ***
   ],
   "exclude": ["node_modules", "build"] // *** The files to not type check ***
 }
