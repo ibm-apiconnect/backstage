@@ -13,5 +13,5 @@
 
   "repository": "https://github.com/ibm-apiconnect/backstage.git",
 
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
