@@ -1,5 +1,5 @@
 {
-  "name": "apiconnect-backstage",
+  "name": "apic-backstage",
   "version": "1.0.1",
   "workspaces": [
     "plugins/*"
