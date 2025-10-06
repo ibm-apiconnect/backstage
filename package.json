@@ -1,7 +1,6 @@
 {
   "name": "apiconnect-backstage",
   "version": "1.0.1",
-  "private": true,
   "workspaces": [
     "plugins/*"
   ],
