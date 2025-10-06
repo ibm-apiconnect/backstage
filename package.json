@@ -1,17 +1,15 @@
 {
   "name": "apiconnect-backstage",
-  "version": "1.0.0",
- "private": true,
+  "version": "1.0.1",
+  "private": true,
   "workspaces": [
     "plugins/*"
   ],
-   "scripts": {
+  "scripts": {
     "build": "backstage-cli repo build --all",
     "tsc": "tsc",
     "clean": "backstage-cli repo clean"
   },
-
   "repository": "https://github.com/ibm-apiconnect/backstage.git",
-
   "license": "Apache-2.0"
 }
