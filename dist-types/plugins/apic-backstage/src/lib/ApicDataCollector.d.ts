@@ -1,0 +1,13 @@
+import type { IbmApicConfig } from '../providers/types.js';
+import type { CacheService, LoggerService } from '@backstage/backend-plugin-api';
+import { type ProductEntity } from './types.js';
+import { type ApiEntity, type DomainEntity, type SystemEntity } from '@backstage/catalog-model';
+export declare function createAPICDomain(): DomainEntity;
+export declare function createInstanceDomain(env: string): DomainEntity;
+export declare function extractTagsFromApiDocument(apiDocument: string): string[];
+export declare function collectAPIEntities(config: IbmApicConfig, logger: LoggerService, cache: CacheService, orgName: string, catalogName: string): Promise<ApiEntity[]>;
+export declare function collectAPIDocument(config: IbmApicConfig, logger: LoggerService, cache: CacheService, orgName: string, catalogName: string, apiName: string, apiVersion: string): Promise<string>;
+export declare function collectCatalogEntities(config: IbmApicConfig, logger: LoggerService, cache: CacheService, orgName: string): Promise<SystemEntity[]>;
+export declare function collectProductEntities(config: IbmApicConfig, logger: LoggerService, cache: CacheService, orgName: string, catalogName: string): Promise<ProductEntity[]>;
+export declare function collectOrgEntities(config: IbmApicConfig, logger: LoggerService, cache: CacheService): Promise<DomainEntity[]>;
+export declare function getPortalEndpoint(config: IbmApicConfig, logger: LoggerService, cache: CacheService, orgName: string, catalogName: string): Promise<import("@backstage/types").JsonValue | undefined>;
