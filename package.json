@@ -1,7 +1,6 @@
 {
   "name": "apic-backstage",
-  "version": "1.0.2",
-  "private": true,
+  "version": "1.0.3",
   "workspaces": [
     "plugins/*"
   ],
